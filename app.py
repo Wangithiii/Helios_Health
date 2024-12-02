@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 import os
+from extensions import db
 
 # Load environment variables
 load_dotenv()
@@ -14,11 +15,15 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Initialize the database
-db = SQLAlchemy(app)
+db.init_app(app)
 
 # Import and register routes
-from routes import routes_bp
+from user_routes import routes_bp
 app.register_blueprint(routes_bp)
+from health_log_routes import health_log_routes
+app.register_blueprint(health_log_routes)
+from medication_routes import medication_routes
+app.register_blueprint(medication_routes)
 
 # Basic home route
 @app.route('/')

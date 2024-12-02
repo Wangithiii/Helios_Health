@@ -1,7 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 from enum import Enum as PyEnum
+from extensions import db
 
-db = SQLAlchemy()
 
 # Enums for reusable values
 class GenderEnum(PyEnum):
