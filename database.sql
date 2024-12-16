@@ -5,7 +5,7 @@ user_id INT PRIMARY KEY AUTO_INCREMENT,
 first_name VARCHAR(255) NOT NULL,
 last_name VARCHAR(255) NOT NULL,
 email_address VARCHAR (255) UNIQUE,
-phone_number INT,
+phone_number VARCHAR (50)
 password_hash VARCHAR(255),
 date_of_birth DATE,
 gender ENUM('Male', 'Female', 'Other'),

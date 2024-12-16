@@ -24,6 +24,11 @@ from health_log_routes import health_log_routes
 app.register_blueprint(health_log_routes)
 from medication_routes import medication_routes
 app.register_blueprint(medication_routes)
+from chronicc_conditions_routes import chronic_condition_routes
+app.register_blueprint(chronic_condition_routes)
+from specialist_routes import specialist_routes
+app.register_blueprint(specialist_routes)
+
 
 # Basic home route
 @app.route('/')

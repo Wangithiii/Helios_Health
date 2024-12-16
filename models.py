@@ -91,7 +91,7 @@ class Specialist(db.Model):
     specialty = db.Column(db.String(100), nullable=False)
     first_name = db.Column(db.String(255), nullable=False)
     last_name = db.Column(db.String(255), nullable=False)
-    phone_number = db.Column(db.String(15), nullable=False)
+    phone_number = db.Column(db.String(50), nullable=False)
     email_address = db.Column(db.String(255), nullable=False)
     available_times = db.Column(db.Text, nullable=True)
 
