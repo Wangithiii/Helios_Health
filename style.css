@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  /* General Layout */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+  
+  /* Data Table Styling */
+  #data-container {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 600;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1; 
+    cursor: pointer;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-size: 1.6rem;
+    color: #4CAF50;
+  }
+  
+  .card p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    table th, table td {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    header {
+      padding: 30px 0;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    footer {
+      font-size: 0.9rem;
+    }
+  }
+  
